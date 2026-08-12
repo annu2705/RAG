@@ -1,0 +1,9 @@
+{
+  "retrieval_p50_ms": 15.53,
+  "retrieval_p95_ms": 37.78,
+  "end_to_end_p50_ms": 586.48,
+  "end_to_end_p95_ms": 4104.18,
+  "sample_count": 20,
+  "top_k": 4,
+  "embedding_model": "all-MiniLM-L6-v2"
+}

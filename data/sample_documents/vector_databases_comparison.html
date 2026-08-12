@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vector Databases Comparison Guide</title>
+</head>
+<body>
+    <h1>Vector Databases Comparison: ChromaDB vs Cloud Alternatives</h1>
+    
+    <section>
+        <h2>Why ChromaDB?</h2>
+        <p>ChromaDB is a lightweight open-source vector store that can be deployed on standard EBS volume storage. Unlike cloud-managed vector databases such as Pinecone or Qdrant Cloud which charge per-vector and per-read-unit fees, ChromaDB only costs the price of the compute virtual machine and attached disk.</p>
+    </section>
+
+    <section>
+        <h2>Performance & Latency</h2>
+        <p>ChromaDB delivers sub-20 millisecond retrieval p50 latency for collections up to 1 million vectors. For 100K vectors, p95 latency stays under 35 milliseconds when running on standard 4-vCPU instances.</p>
+    </section>
+
+    <section>
+        <h2>Metadata Filtering</h2>
+        <p>ChromaDB supports rich metadata filtering using equality, list inclusion, and range operators. Filtering allows querying vectors limited by document ID, file type, or ingestion timestamp.</p>
+    </section>
+
+    <section>
+        <h2>Idempotent Ingestion</h2>
+        <p>By computing a SHA-256 hash of extracted content, systems can perform idempotent upserts into ChromaDB. Duplicate uploads overwrite existing chunk IDs rather than doubling memory and storage usage.</p>
+    </section>
+</body>
+</html>

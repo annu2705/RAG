@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the recommended chunk size and overlap for document chunking?",
+    "relevant_doc": "rag_architecture_guide.md",
+    "gold_answer": "Recommended chunk sizes range from 300 to 800 tokens, with 50 to 100 tokens of overlap."
+  },
+  {
+    "id": "q02",
+    "question": "How does idempotent re-ingestion prevent duplicate vectors?",
+    "relevant_doc": "rag_architecture_guide.md",
+    "gold_answer": "Deterministic hashing like SHA-256 ensures idempotent re-ingestion, avoiding duplicate vectors when documents are re-uploaded."
+  },
+  {
+    "id": "q03",
+    "question": "What vector index structure does ChromaDB use for similarity search?",
+    "relevant_doc": "rag_architecture_guide.md",
+    "gold_answer": "ChromaDB uses HNSW (Hierarchical Navigable Small World) graphs for fast similarity search."
+  },
+  {
+    "id": "q04",
+    "question": "What safe response is returned when no relevant context is found above the similarity threshold?",
+    "relevant_doc": "rag_architecture_guide.md",
+    "gold_answer": "The system returns: 'No relevant information was found in the uploaded documents.'"
+  },
+  {
+    "id": "q05",
+    "question": "What metadata components are included in response citations?",
+    "relevant_doc": "rag_architecture_guide.md",
+    "gold_answer": "Citations contain the document name, page number, and chunk ID."
+  },
+  {
+    "id": "q06",
+    "question": "Why is ChromaDB more cost-efficient than cloud-managed vector databases?",
+    "relevant_doc": "vector_databases_comparison.html",
+    "gold_answer": "ChromaDB only costs the price of the compute virtual machine and attached disk, unlike managed vector DBs charging per-vector and per-read fees."
+  },
+  {
+    "id": "q07",
+    "question": "What is the expected retrieval p50 latency for ChromaDB at 1 million vectors?",
+    "relevant_doc": "vector_databases_comparison.html",
+    "gold_answer": "ChromaDB delivers sub-20 millisecond retrieval p50 latency for collections up to 1 million vectors."
+  },
+  {
+    "id": "q08",
+    "question": "What is the p95 latency for 100K vectors on 4-vCPU instances?",
+    "relevant_doc": "vector_databases_comparison.html",
+    "gold_answer": "For 100K vectors, p95 latency stays under 35 milliseconds."
+  },
+  {
+    "id": "q09",
+    "question": "What operators are supported in ChromaDB metadata filtering?",
+    "relevant_doc": "vector_databases_comparison.html",
+    "gold_answer": "ChromaDB supports equality, list inclusion, and range operators."
+  },
+  {
+    "id": "q10",
+    "question": "What hash algorithm is used to compute SHA-256 content hashes for upserts?",
+    "relevant_doc": "vector_databases_comparison.html",
+    "gold_answer": "A SHA-256 hash of extracted content is used for idempotent upserts into ChromaDB."
+  },
+  {
+    "id": "q11",
+    "question": "What total storage space is required for 100K vectors of 384 dimensions in ChromaDB?",
+    "relevant_doc": "chromadb_production_handbook.pdf",
+    "gold_answer": "At 100K vectors with 384 dimensions, total storage requirement is under 250 MB."
+  },
+  {
+    "id": "q12",
+    "question": "How much RAM is recommended per 500K vectors for HNSW graph caching?",
+    "relevant_doc": "chromadb_production_handbook.pdf",
+    "gold_answer": "Allocate at least 2 GB of RAM per 500K vectors for HNSW graph caching."
+  },
+  {
+    "id": "q13",
+    "question": "What metrics measure retrieval quality in RAG evaluation?",
+    "relevant_doc": "chromadb_production_handbook.pdf",
+    "gold_answer": "Retrieval quality is measured by Recall@K, MRR, and nDCG@K."
+  },
+  {
+    "id": "q14",
+    "question": "What does Faithfulness measure in generation groundedness evaluation?",
+    "relevant_doc": "chromadb_production_handbook.pdf",
+    "gold_answer": "Faithfulness evaluates whether the LLM answer is supported strictly by retrieved context without external hallucination."
+  },
+  {
+    "id": "q15",
+    "question": "What target value should retrieval p50 stay under according to benchmarks?",
+    "relevant_doc": "chromadb_production_handbook.pdf",
+    "gold_answer": "Retrieval p50 should be under 25ms."
+  },
+  {
+    "id": "q16",
+    "question": "What is Quantum Teleportation Superluminal Bandwidth Limit?",
+    "relevant_doc": "NONE",
+    "gold_answer": "No relevant information was found in the uploaded documents."
+  },
+  {
+    "id": "q17",
+    "question": "Who won the 1928 World Chess Championship in Tokyo?",
+    "relevant_doc": "NONE",
+    "gold_answer": "No relevant information was found in the uploaded documents."
+  },
+  {
+    "id": "q18",
+    "question": "What is the capital city of Neptune's primary moon Triton?",
+    "relevant_doc": "NONE",
+    "gold_answer": "No relevant information was found in the uploaded documents."
+  },
+  {
+    "id": "q19",
+    "question": "What key formula calculates nDCG@K in information retrieval?",
+    "relevant_doc": "chromadb_production_handbook.pdf",
+    "gold_answer": "nDCG@K measures discounted cumulative gain normalized against ideal cumulative gain."
+  },
+  {
+    "id": "q20",
+    "question": "How does ChromaDB prevent duplicate chunk vector count accumulation during re-ingestion?",
+    "relevant_doc": "vector_databases_comparison.html",
+    "gold_answer": "Duplicate uploads overwrite existing chunk IDs rather than doubling memory and storage usage."
+  }
+]

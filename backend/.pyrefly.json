@@ -1,0 +1,11 @@
+{
+  "python_interpreter": "venv/Scripts/python.exe",
+  "pythonpath": [
+    ".",
+    "venv/Lib/site-packages"
+  ],
+  "search_paths": [
+    ".",
+    "venv/Lib/site-packages"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "comparisons": [
+    {
+      "scale_vectors": 100000,
+      "raw_storage_gb": 0.21,
+      "chromadb_monthly_cost_usd": 16.0,
+      "managed_db_monthly_cost_usd": 46.05,
+      "monthly_savings_usd": 30.05,
+      "savings_percentage": 65.3,
+      "chromadb_breakdown": {
+        "compute_vm": "$15.0/mo",
+        "ebs_storage": "$1.0/mo (0.21 GB)"
+      },
+      "managed_breakdown": {
+        "base_tier": "$40.0/mo",
+        "vector_fee": "$6.0/mo",
+        "storage_fee": "$0.05/mo"
+      }
+    },
+    {
+      "scale_vectors": 1000000,
+      "raw_storage_gb": 2.15,
+      "chromadb_monthly_cost_usd": 31.0,
+      "managed_db_monthly_cost_usd": 180.54,
+      "monthly_savings_usd": 149.54,
+      "savings_percentage": 82.8,
+      "chromadb_breakdown": {
+        "compute_vm": "$30.0/mo",
+        "ebs_storage": "$1.0/mo (2.15 GB)"
+      },
+      "managed_breakdown": {
+        "base_tier": "$120.0/mo",
+        "vector_fee": "$60.0/mo",
+        "storage_fee": "$0.54/mo"
+      }
+    },
+    {
+      "scale_vectors": 10000000,
+      "raw_storage_gb": 21.46,
+      "chromadb_monthly_cost_usd": 121.72,
+      "managed_db_monthly_cost_usd": 1105.36,
+      "monthly_savings_usd": 983.65,
+      "savings_percentage": 89.0,
+      "chromadb_breakdown": {
+        "compute_vm": "$120.0/mo",
+        "ebs_storage": "$1.72/mo (21.46 GB)"
+      },
+      "managed_breakdown": {
+        "base_tier": "$500.0/mo",
+        "vector_fee": "$600.0/mo",
+        "storage_fee": "$5.36/mo"
+      }
+    }
+  ],
+  "assumptions": {
+    "embedding_dimension": 384,
+    "bytes_per_vector_element": 4,
+    "hnsw_index_overhead_multiplier": 1.5,
+    "ebs_gp3_price_per_gb_month": 0.08,
+    "managed_storage_price_per_gb_month": 0.25,
+    "managed_vector_price_per_million": 60.0,
+    "monthly_query_volume_assumed": "100,000 queries"
+  }
+}

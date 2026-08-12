@@ -1,0 +1,41 @@
+# Assignment Requirement Checklist
+
+- [x] PDF ingestion
+- [x] HTML ingestion
+- [x] Markdown ingestion
+- [x] Configurable chunk size
+- [x] Configurable overlap
+- [x] Idempotent re-ingestion
+- [x] Embedding model recorded
+- [x] Embedding dimensionality recorded
+- [x] Vector storage (ChromaDB)
+- [x] Metadata
+- [x] Metadata filtering
+- [x] Top-K retrieval
+- [x] Grounded answer
+- [x] Chunk citations
+- [x] No-context handling (Safe response)
+- [x] HTTP API (FastAPI)
+- [x] Environment configuration (.env / .env.example)
+- [x] No hardcoded secrets
+- [x] Query latency logging
+- [x] Chunk count logging
+- [x] Token usage logging
+- [x] 15–30 question evaluation set (20 questions in eval_dataset.json)
+- [x] Recall@K / Hit Rate
+- [x] MRR
+- [x] nDCG@K
+- [x] Context Precision
+- [x] Faithfulness / Groundedness
+- [x] Answer Relevance
+- [x] EM/F1 where applicable
+- [x] Retrieval p50
+- [x] Retrieval p95
+- [x] 100K cost analysis
+- [x] 1M cost analysis
+- [x] 10M cost analysis
+- [x] Managed DB comparison
+- [x] Evaluation harness
+- [x] Results files (results/retrieval_results.json, answer_results.json, latency_results.json, cost_comparison.json, evaluation_summary.json)
+- [x] README
+- [x] Automated tests (pytest suite covering ingestion, chunking, idempotency, search, grounded generation, safe fallback, cost calculation)

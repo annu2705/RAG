@@ -1,0 +1,232 @@
+{
+  "aggregate": {
+    "recall_at_k": 0.95,
+    "mrr": 0.8125,
+    "ndcg_at_k": 0.6768,
+    "context_precision": 0.2875,
+    "k": 4,
+    "total_questions": 20
+  },
+  "per_question": [
+    {
+      "id": "q01",
+      "question": "What is the recommended chunk size and overlap for document chunking?",
+      "relevant_doc": "rag_architecture_guide.md",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.25,
+      "retrieval_latency_ms": 20.41,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q02",
+      "question": "How does idempotent re-ingestion prevent duplicate vectors?",
+      "relevant_doc": "rag_architecture_guide.md",
+      "hit": true,
+      "reciprocal_rank": 0.25,
+      "ndcg": 0.4307,
+      "context_precision": 0.25,
+      "retrieval_latency_ms": 32.32,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q03",
+      "question": "What vector index structure does ChromaDB use for similarity search?",
+      "relevant_doc": "rag_architecture_guide.md",
+      "hit": true,
+      "reciprocal_rank": 0.25,
+      "ndcg": 0.4307,
+      "context_precision": 0.25,
+      "retrieval_latency_ms": 37.19,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q04",
+      "question": "What safe response is returned when no relevant context is found above the similarity threshold?",
+      "relevant_doc": "rag_architecture_guide.md",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.25,
+      "retrieval_latency_ms": 48.96,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q05",
+      "question": "What metadata components are included in response citations?",
+      "relevant_doc": "rag_architecture_guide.md",
+      "hit": true,
+      "reciprocal_rank": 0.5,
+      "ndcg": 0.6509,
+      "context_precision": 0.5,
+      "retrieval_latency_ms": 37.18,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q06",
+      "question": "Why is ChromaDB more cost-efficient than cloud-managed vector databases?",
+      "relevant_doc": "vector_databases_comparison.html",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 0.8772,
+      "context_precision": 0.5,
+      "retrieval_latency_ms": 19.16,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q07",
+      "question": "What is the expected retrieval p50 latency for ChromaDB at 1 million vectors?",
+      "relevant_doc": "vector_databases_comparison.html",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.5,
+      "retrieval_latency_ms": 23.99,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q08",
+      "question": "What is the p95 latency for 100K vectors on 4-vCPU instances?",
+      "relevant_doc": "vector_databases_comparison.html",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 0.9197,
+      "context_precision": 0.5,
+      "retrieval_latency_ms": 14.59,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q09",
+      "question": "What operators are supported in ChromaDB metadata filtering?",
+      "relevant_doc": "vector_databases_comparison.html",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 0.8772,
+      "context_precision": 0.5,
+      "retrieval_latency_ms": 25.95,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q10",
+      "question": "What hash algorithm is used to compute SHA-256 content hashes for upserts?",
+      "relevant_doc": "vector_databases_comparison.html",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.5,
+      "retrieval_latency_ms": 20.52,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q11",
+      "question": "What total storage space is required for 100K vectors of 384 dimensions in ChromaDB?",
+      "relevant_doc": "chromadb_production_handbook.pdf",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.25,
+      "retrieval_latency_ms": 14.34,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q12",
+      "question": "How much RAM is recommended per 500K vectors for HNSW graph caching?",
+      "relevant_doc": "chromadb_production_handbook.pdf",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.25,
+      "retrieval_latency_ms": 14.57,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q13",
+      "question": "What metrics measure retrieval quality in RAG evaluation?",
+      "relevant_doc": "chromadb_production_handbook.pdf",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.25,
+      "retrieval_latency_ms": 13.86,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q14",
+      "question": "What does Faithfulness measure in generation groundedness evaluation?",
+      "relevant_doc": "chromadb_production_handbook.pdf",
+      "hit": false,
+      "reciprocal_rank": 0.0,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "retrieval_latency_ms": 16.46,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q15",
+      "question": "What target value should retrieval p50 stay under according to benchmarks?",
+      "relevant_doc": "chromadb_production_handbook.pdf",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.25,
+      "retrieval_latency_ms": 13.18,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q16",
+      "question": "What is Quantum Teleportation Superluminal Bandwidth Limit?",
+      "relevant_doc": "NONE",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "retrieval_latency_ms": 13.9,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q17",
+      "question": "Who won the 1928 World Chess Championship in Tokyo?",
+      "relevant_doc": "NONE",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "retrieval_latency_ms": 9.54,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q18",
+      "question": "What is the capital city of Neptune's primary moon Triton?",
+      "relevant_doc": "NONE",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "retrieval_latency_ms": 12.06,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q19",
+      "question": "What key formula calculates nDCG@K in information retrieval?",
+      "relevant_doc": "chromadb_production_handbook.pdf",
+      "hit": true,
+      "reciprocal_rank": 0.25,
+      "ndcg": 0.4307,
+      "context_precision": 0.25,
+      "retrieval_latency_ms": 14.14,
+      "retrieved_chunk_count": 4
+    },
+    {
+      "id": "q20",
+      "question": "How does ChromaDB prevent duplicate chunk vector count accumulation during re-ingestion?",
+      "relevant_doc": "vector_databases_comparison.html",
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "ndcg": 0.9197,
+      "context_precision": 0.5,
+      "retrieval_latency_ms": 10.86,
+      "retrieved_chunk_count": 4
+    }
+  ]
+}
